@@ -36,7 +36,7 @@ JavaScript (Vanilla JS) – interactivity and cart logic
 
 Download or clone the repository:
 
-git clone https://github.com/your-username/QuickBite.git
+git clone https://github.com/Abubakarzari/QuickBite
 
 
 Open index.html in any web browser.
