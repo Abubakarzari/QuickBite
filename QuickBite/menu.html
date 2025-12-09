@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Palace - Menu | QuickBite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> <span class="logo-text">QuickBite</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurants.html" class="active">Restaurants</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="cart-icon">
+          <button id="cartToggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+          </button>
+        </div>
+       <a href="login.html" class="btn btn-outline">
+  <i class="fas fa-sign-in-alt"></i> Login
+</a>
+<a href="register.html" class="btn btn-primary">
+  <i class="fas fa-user-plus"></i> Sign Up
+</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Restaurant Info -->
+  <section class="restaurant-hero">
+    <div class="container">
+      <h1>Pizza Palace 🍕</h1>
+      <p>Authentic Italian pizzas baked fresh in a stone oven</p>
+    </div>
+  </section>
+
+  <!-- Popular Dishes -->
+  <section class="dishes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Dishes</h2>
+        <p>Most ordered dishes this week</p>
+      </div>
+      <div class="dish-cards">
+        
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Margherita Pizza">
+            <div class="dish-badge">Popular</div>
+          </div>
+          <div class="dish-info">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+            <div class="dish-price">
+              <span class="price">$12.99</span>
+              <button class="btn btn-primary pulse"
+                      data-name="Margherita Pizza" 
+                      data-price="12.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Classic Burger">
+            <div class="dish-badge">Chef's Choice</div>
+          </div>
+          <div class="dish-info">
+            <h3>Classic Burger</h3>
+            <p>Beef patty with cheese, lettuce, tomato, and special sauce</p>
+            <div class="dish-price">
+              <span class="price">$9.99</span>
+              <button class="btn btn-primary pulse"
+                      data-name="Classic Burger" 
+                      data-price="9.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="assets/ab.jpg" alt="California Rolls">
+            <div class="dish-badge">New</div>
+          </div>
+          <div class="dish-info">
+            <h3>California Rolls</h3>
+            <p>8 pieces of crab, avocado and cucumber rolls</p>
+            <div class="dish-price">
+              <span class="price">$14.99</span>
+              <button class="btn btn-primary pulse"
+                      data-name="California Rolls" 
+                      data-price="14.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Items -->
+  <section class="dishes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+        <p>Freshly baked, cheesy, and delicious</p>
+      </div>
+
+      <div class="dish-cards">
+        <!-- Dish 1 -->
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="/assets/pizza1.jpeg" alt="Pepperoni Pizza">
+          </div>
+          <div class="dish-info">
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic pepperoni with mozzarella and tomato sauce</p>
+            <div class="dish-price">
+              <span class="price">$13.99</span>
+              <button class="btn btn-primary pulse" data-name="Pepperoni Pizza" data-price="13.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500" alt="Veggie Pizza">
+          </div>
+          <div class="dish-info">
+            <h3>Veggie Supreme</h3>
+            <p>Loaded with bell peppers, olives, onions, and mushrooms</p>
+            <div class="dish-price">
+              <span class="price">$11.99</span>
+              <button class="btn btn-primary pulse" data-name="Veggie Supreme" data-price="11.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="/assets/pizza.jpg" alt="Cheese Pizza">
+          </div>
+          <div class="dish-info">
+            <h3>Cheese Pizza</h3>
+            <p>Simple and cheesy with mozzarella and parmesan</p>
+            <div class="dish-price">
+              <span class="price">$9.99</span>
+              <button class="btn btn-primary pulse" data-name="Cheese Pizza" data-price="9.99">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <aside id="cartSidebar" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="closeCart"><i class="fas fa-times"></i></button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button id="checkoutBtn" class="btn btn-primary">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toasts -->
+  <div id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>QuickBite</h3>
+        <p>Delicious food delivered to your door.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="contact.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 QuickBite. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

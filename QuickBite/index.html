@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Favicon for browser tab -->
+<!-- Favicon for browser tab -->
+<title>QuickBite - Premium Food Delivery</title>
+
+  <!-- Font Awesome & Google Fonts (same as your original) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">
+          <i class="fas fa-utensils"></i>
+          <span class="logo-text">QuickBite</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Help</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- CART ICON (shows badge) -->
+          <div class="cart-icon">
+            <button id="cartToggle" aria-label="Open cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartCount">0</span>
+            </button>
+          </div>
+
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="login.html" class="btn btn-outline">
+  <i class="fas fa-sign-in-alt"></i> Login
+</a>
+<a href="register.html" class="btn btn-primary">
+  <i class="fas fa-user-plus"></i> Sign Up
+</a>
+     </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Savor the Flavor, Anytime, Anywhere</h1>
+        <p>Order from your favorite restaurants and get food delivered to your doorstep in minutes.</p>
+        <div class="search-bar">
+          <input type="text" placeholder="What are you craving today?">
+          <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Getting your favorite food delivered has never been easier</p>
+      </div>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Choose Location</h3>
+          <p>Enter your address or use your current location to find restaurants near you.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Select Food</h3>
+          <p>Browse hundreds of menus to find the food you like the most.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-truck"></i>
+          <h3>Delivery</h3>
+          <p>Get your food delivered quickly to your doorstep by our reliable couriers.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-heart"></i>
+          <h3>Enjoy</h3>
+          <p>Enjoy your meal and share your experience with others!</p>
+        </div>
+        <div class="feature-card">
+    <i class="fas fa-star"></i>
+    <h3>Rate & Review</h3>
+    <p>Give feedback on your order and help others discover the best dishes.</p>
+  </div>
+  <div class="feature-card">
+    <i class="fas fa-bell"></i>
+    <h3>Get Notifications</h3>
+    <p>Receive updates about your order status and exclusive offers directly.</p>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-title">
+        <h2>Food Categories</h2>
+        <p>Explore our diverse range of delicious food categories</p>
+      </div>
+      <div class="category-cards">
+        <div class="category-card">
+          <img src="/assets/pizza.jpg" alt="Pizza">
+          <h3>Pizza</h3>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Burgers">
+          <h3>Burgers</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/shshi.jpeg" alt="Sushi">
+          <h3>Sushi</h3>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Steak">
+          <h3>Steak</h3>
+        </div>
+        <div class="category-card">
+          <img src="/assets/pasta" alt="Pasta">
+          <h3>Pasta</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/Biryani.jpeg" alt="Biryani">
+          <h3>Biryani</h3>
+        </div>
+        <div class="category-card">
+          <img src="assets/muttonbiryani" alt="Mutton Biryani">
+          <h3>Mutton Biryani</h3>
+        </div>
+ <div class="category-card">
+    <img src="/assets/salad" alt="Salad">
+    <h3>Salad</h3>
+  </div>
+  <div class="category-card">
+    <img src="/assets/dessert" alt="Dessert">
+    <h3>Dessert</h3>
+  </div>
+  <div class="category-card">
+    <img src="/assets/sandwish" alt="Sandwich">
+
+    <h3>Sandwich</h3>
+  </div>
+  <div class="category-card">
+    <img src="/assets/icecream" alt="Ice Cream">
+    <h3>Ice Cream</h3>
+  </div>
+  <div class="category-card">
+    <img src="/assets/tacos" alt="Tacos">
+    <h3>Tacos</h3>
+  </div>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Dishes -->
+  <section class="dishes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Dishes</h2>
+        <p>Most ordered dishes this week</p>
+      </div>
+      <div class="dish-cards">
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Margherita Pizza">
+            <div class="dish-badge">Popular</div>
+          </div>
+          <div class="dish-info">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+            <div class="dish-price">
+              <span class="price">$12.99</span>
+              <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Classic Burger">
+            <div class="dish-badge">Chef's Choice</div>
+          </div>
+          <div class="dish-info">
+            <h3>Classic Burger</h3>
+            <p>Beef patty with cheese, lettuce, tomato, and special sauce</p>
+            <div class="dish-price">
+              <span class="price">$9.99</span>
+              <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="assets/ab.jpg" alt="California Rolls">
+            <div class="dish-badge">New</div>
+          </div>
+          <div class="dish-info">
+            <h3>California Rolls</h3>
+            <p>8 pieces of crab, avocado and cucumber rolls</p>
+            <div class="dish-price">
+              <span class="price">$14.99</span>
+              <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/pizza1.jpeg" alt="Pepperoni Pizza">
+      <div class="dish-badge">Popular</div>
+    </div>
+    <div class="dish-info">
+      <h3>Pepperoni Pizza</h3>
+      <p>Loaded with pepperoni, mozzarella cheese, and tomato sauce</p>
+      <div class="dish-price">
+        <span class="price">$13.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/Burger.jpeg" alt="Veggie Burger">
+      <div class="dish-badge">Healthy</div>
+    </div>
+    <div class="dish-info">
+      <h3>Veggie Burger</h3>
+      <p>Grilled veggie patty with lettuce, tomato, and vegan mayo</p>
+      <div class="dish-price">
+        <span class="price">$8.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/SpaghettiCarbonara" alt="Spaghetti Carbonara">
+      <div class="dish-badge">Chef's Choice</div>
+    </div>
+    <div class="dish-info">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Classic Italian pasta with creamy sauce, bacon, and parmesan</p>
+      <div class="dish-price">
+        <span class="price">$11.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/salad" alt="Caesar Salad">
+      <div class="dish-badge">Healthy</div>
+    </div>
+    <div class="dish-info">
+      <h3>Caesar Salad</h3>
+      <p>Romaine lettuce, parmesan, croutons, and Caesar dressing</p>
+      <div class="dish-price">
+        <span class="price">$7.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/GrilledSalmon" alt="Grilled Salmon">
+      <div class="dish-badge">Chef's Choice</div>
+    </div>
+    <div class="dish-info">
+      <h3>Grilled Salmon</h3>
+      <p>Fresh salmon grilled to perfection with lemon butter sauce</p>
+      <div class="dish-price">
+        <span class="price">$18.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/ChocolateCake" alt="Chocolate Cake">
+      <div class="dish-badge">Sweet Treat</div>
+    </div>
+    <div class="dish-info">
+      <h3>Chocolate Cake</h3>
+      <p>Rich chocolate cake with chocolate ganache and berries</p>
+      <div class="dish-price">
+        <span class="price">$6.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/tacos" alt="Tacos">
+      <div class="dish-badge">Popular</div>
+    </div>
+    <div class="dish-info">
+      <h3>Tacos</h3>
+      <p>Soft tortilla filled with seasoned meat, lettuce, and salsa</p>
+      <div class="dish-price">
+        <span class="price">$9.49</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/IceCreamSundae" alt="Ice Cream Sundae">
+      <div class="dish-badge">Sweet Treat</div>
+    </div>
+    <div class="dish-info">
+      <h3>Ice Cream Sundae</h3>
+      <p>Creamy vanilla ice cream topped with chocolate syrup and cherries</p>
+      <div class="dish-price">
+        <span class="price">$5.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/ChickenWings" alt="Chicken Wings">
+      <div class="dish-badge">Spicy</div>
+    </div>
+    <div class="dish-info">
+      <h3>Chicken Wings</h3>
+      <p>Crispy wings tossed in hot sauce, served with dip</p>
+      <div class="dish-price">
+        <span class="price">$10.99</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/veggiewrap" alt="Veggie Wrap">
+      <div class="dish-badge">Healthy</div>
+    </div>
+    <div class="dish-info">
+      <h3>Veggie Wrap</h3>
+      <p>Whole wheat wrap with grilled vegetables and hummus</p>
+      <div class="dish-price">
+        <span class="price">$7.49</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="dish-card">
+    <div class="dish-image">
+      <img src="/assets/pancakes" alt="Pancakes">
+      <div class="dish-badge">Breakfast</div>
+    </div>
+    <div class="dish-info">
+      <h3>Pancakes</h3>
+      <p>Fluffy pancakes with maple syrup and fresh berries</p>
+      <div class="dish-price">
+        <span class="price">$6.49</span>
+        <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dish-card">
+  <div class="dish-image">
+    <img src="/assets/Biryani.jpeg" alt="Biryani">
+    <div class="dish-badge">Chef's Choice</div>
+  </div>
+  <div class="dish-info">
+    <h3>Hyderabadi Biryani</h3>
+    <p>Fragrant basmati rice cooked with tender chicken, spices, and saffron</p>
+    <div class="dish-price">
+      <span class="price">$11.99</span>
+      <button class="btn btn-primary pulse"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>QuickBite</h3>
+          <p>Delicious food delivered to your door. Order from your favorite restaurants with just a few clicks.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Top Categories</h3>
+          <ul>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Burgers</a></li>
+            <li><a href="#">Sushi</a></li>
+            <li><a href="#">Pasta</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Food Street,Banglore</li>
+            <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+            <li><i class="fas fa-envelope"></i> support@quickbite.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 QuickBite - Food Delivery Service. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <aside id="cartSidebar" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div>Subtotal</div>
+        <div id="cartTotal">$0.00</div>
+      </div>
+      <button id="checkoutBtn" class="btn btn-primary">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toast container -->
+  <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>

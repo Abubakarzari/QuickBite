@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurants - QuickBite</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header (same as index.html) -->
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> <span class="logo-text">QuickBite</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurants.html" class="active">Restaurants</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="cart-icon">
+          <button id="cartToggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Restaurant Section -->
+  <section class="restaurants container">
+    <div class="section-title">
+      <h2>Choose Your Restaurant</h2>
+      <p>Pick your favorite spot and explore their delicious menu.</p>
+    </div>
+    <div class="restaurant-cards">
+      <div class="restaurant-card">
+        <img src="assets/ab.jpg" alt="Pizza Palace">
+        <h3>Pizza Palace</h3>
+        <p>Fresh oven-baked pizzas with a modern twist.</p>
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+      </div>
+      <div class="restaurant-card">
+        <img src="assets/ab.jpg" alt="Burger Hub">
+        <h3>Burger Hub</h3>
+        <p>Juicy burgers and crispy fries made just for you.</p>
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+      </div>
+      <div class="restaurant-card">
+        <img src="assets/ab.jpg" alt="Spicy Tandoor">
+        <h3>Spicy Tandoor</h3>
+        <p>Authentic Indian curries, biryanis, and more.</p>
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar (same as index.html) -->
+  <aside id="cartSidebar" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="closeCart">&times;</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toasts -->
+  <div id="toastContainer"></div>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>QuickBite</h3>
+        <p>Delicious food delivered to your door.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurant.html">Restaurants</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy;2025 QuickBite. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
